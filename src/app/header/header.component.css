@@ -17,7 +17,7 @@
 .ekart--header--nav{
     width: 80%;
     padding: 1vh 2vh;
-    font-size: 10px;
+    font-size: 15px;
 }
 .ekart--top--bar{
     width:auto;
@@ -32,7 +32,7 @@
     color: #36454F;
     font-family: 'Montserrat', sans-serif;
     font-weight:normal;
-    font-size: 14px;
+    font-size: 20px;
     width:70%;
     text-align: center;
 }
