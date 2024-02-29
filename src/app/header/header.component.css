@@ -38,6 +38,7 @@
 }
 .ekart--bottom--bar{
     display: flex;
+    align-items:center;
 }
 .ekart--search-bar{
     padding: 0 3vh;
