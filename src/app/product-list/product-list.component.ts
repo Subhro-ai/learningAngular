@@ -12,4 +12,9 @@ export class ProductListComponent {
   colour: "Matte Black",
   discount : 8.5
   }
+
+  getDiscount() {
+    return this.product.price - this.product.price * this.product.discount / 100
+  }
 }
+

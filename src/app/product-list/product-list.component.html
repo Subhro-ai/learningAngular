@@ -1,4 +1,4 @@
 <p>Name : {{ product.name }} </p>
 <p>Price : {{ product.price }} </p>
 <p>Colour : {{ product.colour }} </p>
-<p>Discounted Price : {{ product.price - product.price * product.discount / 100 }} </p>
+<p>Discounted Price : {{ getDiscount() }} </p>
