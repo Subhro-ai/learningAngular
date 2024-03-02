@@ -6,8 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-  name: string = "iPhone"
-  price: number = 1999
-  colour: string = "Matte Black"
-  discountedPrice: number = this.price - (this.price * 0.2)
+  product = {
+  name : "iPhone",
+  price : 1999,
+  colour: "Matte Black",
+  discount : 8.5
+  }
 }
