@@ -1,7 +1,9 @@
-<img [src] = " product.pImage ">
+<img [src] = " product.pImage " width = 300px>
 <p>Name : {{ product.name }} </p>
 <p>Price : {{ product.price }} </p>
 <p>Colour : {{ product.colour }} </p>
 <p>Discounted Price : {{ getDiscount().toFixed(0) }} </p>
 <p> {{ product.inStock > 0 ? 'Only ' + product.inStock + ' left' : "Not in stock" }} </p>
-<button [disabled] = " !(product.inStock > 0) ">Buy Now</button>
+<button type="button" class="btn btn-primary" [disabled] = " !(product.inStock > 0) ">Buy Now</button>
+<input [value]="name" (input) = "onNameChange()" ><br>
+<p>name = {{name}} </p>

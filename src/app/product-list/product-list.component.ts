@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
+  name : string = "Bruce Wayne"
   product = {
   name : "iPhone",
   price : 1999,
@@ -17,6 +18,10 @@ export class ProductListComponent {
 
   getDiscount() {
     return this.product.price - this.product.price * this.product.discount / 100
+  }
+
+  onNameChange() {
+    this.name = "mark"
   }
 }
 
