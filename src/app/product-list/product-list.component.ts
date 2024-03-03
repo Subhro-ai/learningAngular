@@ -22,11 +22,11 @@ export class ProductListComponent {
   }
 
   increment() {
-    this.addToCard += 1
+    if (this.addToCard < this.product.inStock) (this.addToCard++)
   }
 
   decrement() {
-    if (this.addToCard > 0) { this.addToCard -= 1 }
+    if (this.addToCard > 0) { this.addToCard-- }
   }
 }
 
