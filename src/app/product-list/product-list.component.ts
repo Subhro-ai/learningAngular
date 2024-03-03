@@ -11,7 +11,8 @@ export class ProductListComponent {
   price : 1999,
   colour: "Matte Black",
   discount : 8.5,
-  inStock : 1
+  inStock : 10,
+  pImage : "assets/71v2jVh6nIL._AC_UF1000,1000_QL80_.jpg"
   }
 
   getDiscount() {
