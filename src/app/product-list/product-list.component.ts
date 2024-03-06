@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
+<<<<<<< HEAD
   product = {
   name : "iPhone",
   price : 1999,
@@ -19,5 +20,8 @@ export class ProductListComponent {
   getDiscount() {
     return this.product.price - this.product.price * this.product.discount / 100
   }
+=======
+  lisOfStrings: string[] = ['mark', 'bruce', 'alfred']
+>>>>>>> 2b77a485afa06637287750ba7f89176b60af5e1d
 }
 
