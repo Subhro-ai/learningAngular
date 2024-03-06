@@ -4,4 +4,4 @@
 <p>Colour : {{ product.colour }} </p>
 <p>Discounted Price : {{ getDiscount().toFixed(0) }} </p>
 <p> {{ product.inStock > 0 ? 'Only ' + product.inStock + ' left' : "Not in stock" }} </p>
-<button [disabled] = " !(product.inStock > 0) ">Buy Now</button>
+<button type="button" class="btn btn-primary" [disabled] = " !(product.inStock > 0) ">Buy Now</button>
