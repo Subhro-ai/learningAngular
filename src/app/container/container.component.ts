@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './container.component.css'
 })
 export class ContainerComponent {
-  lisOfStrings: string[] = ['mark', 'bruce', 'alfred']
+  
 }
 
