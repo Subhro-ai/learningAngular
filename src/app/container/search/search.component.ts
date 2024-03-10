@@ -7,5 +7,5 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 })
 export class SearchComponent {
   faSearch = faSearch
-  searchText:string = "Mens Wear"
+  searchText:string = ""
 }
