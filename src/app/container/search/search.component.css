@@ -4,7 +4,7 @@
 }
 .ekart-search-product-input{
     margin: 20px auto;
-    text-align: center;
+    /* text-align: center; */
     width: 40%;
     height: 5.5vh;
     padding: 1px 10px;
