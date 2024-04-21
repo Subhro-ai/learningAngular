@@ -14,4 +14,6 @@ export class FilterComponent {
 
   @Input()
   outOfStock:number = 0;
+
+  selectedFilterButton: string = 'all';
 }
