@@ -10,6 +10,9 @@ import { MainMenuComponent } from './header/main-menu/main-menu.component';
 import { ContainerComponent } from './container/container.component';
 import { SearchComponent } from './container/search/search.component';
 import { FormsModule } from '@angular/forms';
+import { ProductListComponent } from './container/product-list/product-list.component';
+import { ProductComponent } from './container/product-list/product/product.component';
+import { FilterComponent } from './container/product-list/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { FormsModule } from '@angular/forms';
     TopMenuComponent,
     MainMenuComponent,
     ContainerComponent,
-    SearchComponent
+    SearchComponent,
+    ProductListComponent,
+    ProductComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
