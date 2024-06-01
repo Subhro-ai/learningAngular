@@ -536,4 +536,9 @@ export class ProductListComponent {
   totalProdCount:number = this.products.length;
   totalProdInStock:number = this.products.filter(p => p.is_in_inventory === true).length;
   totalProdOutOfStock:number = this.products.filter(p => p.is_in_inventory === false).length;
+
+  onFilterChange() {
+    console.log("WORKS");
+  }
 }
+
