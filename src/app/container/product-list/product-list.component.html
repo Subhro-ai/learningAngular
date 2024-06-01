@@ -2,7 +2,7 @@
     [all]="totalProdCount" 
     [inStock]="totalProdInStock" 
     [outOfStock]="totalProdOutOfStock"
-    (radioButtonChange) = "onFilterChange()">
+    (radioButtonChange) = "onFilterChange($event)">
 </app-filter>
 <div class="ekart--product--container">
     <app-product *ngFor="let prod of products" [product]="prod"></app-product>
