@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { EventEmitter } from '@angular/core';
 @Component({
   selector: 'search',
   templateUrl: './search.component.html',
   styleUrl: './search.component.css'
 })
 export class SearchComponent {
-  faSearch = faSearch
-  searchText:string = ""
+  faSearch = faSearch;
+  searchText:string = "";
+  @Output()
+  searchTextEmit: EventEmitter<string> = new EventEmitter<string>();
+
+  onSearch() {
+    this.searchTextEmit.emit(this.searchText);
+  }
 }

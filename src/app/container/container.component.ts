@@ -6,6 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './container.component.css'
 })
 export class ContainerComponent {
-  
+  searchText: string = '';
+
+  setSearchText(text: string) {
+    this.searchText = text;
+    // console.log(text);
+  }
 }
 
