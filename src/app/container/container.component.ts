@@ -10,7 +10,7 @@ export class ContainerComponent {
 
   setSearchText(text: string) {
     this.searchText = text;
-    // console.log(text);
+    console.log(text);
   }
 }
 
