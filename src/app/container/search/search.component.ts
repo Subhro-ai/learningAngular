@@ -12,7 +12,10 @@ export class SearchComponent {
   @Output()
   searchTextEmit: EventEmitter<string> = new EventEmitter<string>();
 
-  onSearch() {
+  onSearch(inputEL : HTMLInputElement) {
+    this.searchText = inputEL.value;
     this.searchTextEmit.emit(this.searchText);
   }
+
+
 }
