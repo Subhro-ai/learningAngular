@@ -1,6 +1,7 @@
 <div class = "ekart-product--container">
     <search (searchTextEmit)="setSearchText($event)"></search>
-    <product-list [searchText]="searchText"></product-list>
+    <product-list [searchText]="searchText" #productListComponent></product-list>
+    <product-detail *ngIf="productListComponent.selectedProduct"></product-detail>
     <!-- <div *ngFor="let item of lisOfStrings">
         <p>Current item is : {{item}} </p>
     </div> -->

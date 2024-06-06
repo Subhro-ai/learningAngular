@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
-
+import { Products } from '../../Models/Products';
 @Component({
   selector: 'product-list',
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
+  selectedProduct : Products;
   products = [
     {
       id: 1,
