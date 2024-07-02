@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './product-detail.component.css'
 })
 export class ProductDetailComponent {
-
+  i : number = 1;
 }
