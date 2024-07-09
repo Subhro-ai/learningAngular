@@ -8,7 +8,7 @@ import { EventEmitter } from '@angular/core';
 })
 export class SearchComponent {
   faSearch = faSearch;
-  searchText:string = "";
+  searchText:string = "a";
   @Output()
   searchTextEmit: EventEmitter<string> = new EventEmitter<string>();
   @ViewChild('searchInput') searchInputEl : ElementRef;
