@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <img [src] = " product.pImage ">
 <p>Name : {{ product.name }} </p>
 <p>Price : {{ product.price }} </p>
@@ -6,11 +5,3 @@
 <p>Discounted Price : {{ getDiscount().toFixed(0) }} </p>
 <p> {{ product.inStock > 0 ? 'Only ' + product.inStock + ' left' : "Not in stock" }} </p>
 <button type="button" class="btn btn-primary" [disabled] = " !(product.inStock > 0) ">Buy Now</button>
-=======
-<div class = "ekart-product--container">
-    <search></search>
-    <div *ngFor="let item of lisOfStrings">
-        <p>Current item is : {{item}} </p>
-    </div>
-</div>
->>>>>>> 2b77a485afa06637287750ba7f89176b60af5e1d
